@@ -1,0 +1,34 @@
+src/
+├── main/
+│   ├── java/
+│   │   └── com/
+│   │       └── kartik/
+│   │           └── myapp2/
+│   │               ├── Myapp2Application.java       // Main class to run the application
+│   │
+│   │               ├── controller/               // Controllers for handling HTTP requests
+│   │               │   └── UserInfoController.java
+│   │
+│   │               ├── service/                  // Service layer for business logic
+│   │               │   ├── UserInfoService.java
+│   │
+│   │               ├── entity/                   // Entities representing database tables
+│   │               │   └── UserInfo.java
+│   │
+│   │               └── repository/               // Spring Data JPA repository interfaces
+│   │                   └── UserInfoRepository.java
+│   │
+│   ├── resources/
+│       ├── static/                              // Static files (CSS, JS, images)
+│       ├── templates/                           // Thymeleaf templates (HTML files)
+│       │   ├── form.html
+│       │   └── result.html
+│       ├── application.properties               // Application configuration
+│       └── data.sql                             // Optional: Initial database data
+│
+├── test/                                        // Unit and integration tests
+│   ├── java/
+│   │   └── com/
+│   │       └── kartik/
+│   │           └── myapp2/
+│   │               └── Myapp2ApplicationTests.java
