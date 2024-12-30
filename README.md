@@ -1,5 +1,4 @@
-Blind Matching Site
-Overview
+Blind Matching Site Overview
 The Blind Matching Site is a web application built using Spring Boot, HTML, CSS, Bootstrap, and JavaScript. The platform matches users based on their gender and preferences in a "blind" manner. The project demonstrates user management functionalities with professional and responsive design.
 
 Features
@@ -30,8 +29,8 @@ blind-matching-site/
 Setup Instructions
 Step 1: Clone the Repository
 
-git clone https://github.com/your-username/blind-matching-site.git
-cd blind-matching-site
+git clone https://github.com/kartik/matchmee
+cd matchmee
 Step 2: Configure the Database
 Open src/main/resources/application.properties.
 
@@ -69,8 +68,6 @@ Future Enhancements
 Add Spring Security for authentication and role-based access.
 Include a real-time chat feature for matched users using WebSocket.
 Implement advanced matching algorithms with more preferences.
-Screenshots
-<Add screenshots of your app here to make the README visually appealing.>
 Contributing
 Contributions are welcome! Please fork the repository and submit a pull request.
 
