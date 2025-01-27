@@ -1,0 +1,7 @@
+/**
+ * User Service handles the business logic for user-related operations.
+ */
+@Service
+public class UserService {
+    // ...
+}
