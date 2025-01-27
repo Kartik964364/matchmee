@@ -1,0 +1,15 @@
+src/
+├── main/
+│   ├── java/
+│   │   ├── com.example.blindmatch/          # Base package
+│   │   │   ├── controller/                 # Controllers for handling HTTP requests
+│   │   │   ├── service/                    # Service layer for business logic
+│   │   │   ├── repository/                 # DAO/Repository interfaces
+│   │   │   ├── model/                      # Entity classes for database mapping
+│   │   │   └── exception/                  # Custom exceptions
+│   ├── resources/
+│   │   ├── templates/                      # Thymeleaf or JSP templates
+│   │   ├── static/                         # CSS, JS, and images
+│   │   ├── application.properties          # Configuration file
+│   │   └── schema.sql                      # Database schema
+├── test/                                   # Unit and integration tests
