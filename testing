@@ -1,0 +1,19 @@
+@SpringBootTest
+@RunWith(MockitoJUnitRunner.class)
+public class UserServiceTest {
+
+    @Mock
+    private UserRepository userRepository;
+
+    @InjectMocks
+    private UserService userService;
+
+    @Test
+    public void testRegisterUser() {
+        User user = new User("testuser", "test@example.com", "password123");
+        when(userRepository.save(any(User.class))).thenReturn(user);
+
+        UserDTO savedUser = userService.registerUser(new UserDTO(user));
+        assertEquals("testuser", savedUser.getUsername());
+    }
+}
