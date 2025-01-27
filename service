@@ -1,0 +1,10 @@
+@Service
+public class MatchingService {
+
+    @Autowired
+    private UserRepository userRepository;
+
+    public List<User> findMatches(UserPreferences preferences) {
+        return userRepository.findByPreferences(preferences.getGender(), preferences.getAgeRange());
+    }
+}
