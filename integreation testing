@@ -1,0 +1,15 @@
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+public class UserControllerIntegrationTest {
+
+    @Autowired
+    private TestRestTemplate restTemplate;
+
+    @Test
+    public void testRegisterUserEndpoint() {
+        UserDTO userDTO = new UserDTO("testuser", "test@example.com", "password123");
+        ResponseEntity<String> response = restTemplate.postForEntity("/api/users/register", userDTO, String.class);
+
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+        assertEquals("User registered successfully", response.getBody());
+    }
+}
